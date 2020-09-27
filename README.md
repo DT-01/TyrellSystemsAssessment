@@ -21,6 +21,5 @@ Unable to give concrete answer. SQL is declarative, the order of the statements 
 
 Suggested improvements:<br />
 Index the join columns<br />
-Have wildcards at the end of the string and/or index the columns<br />
 
 Time taken: ~2 hours<br />
