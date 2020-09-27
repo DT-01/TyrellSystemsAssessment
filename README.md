@@ -15,15 +15,8 @@ playingcard-distribution-frontend is a React app that will generate a list of pl
 playingcard-distribution-backend is an ExpressJS backend that has a get API which will return an array of player hands.<br />
 
 ## Section B
-Remove the LEFT JOINs for the following tables, there are no fields selected from these tables:-<br />
-jobs_personalities<br />
-personalities<br />
-jobs_practical_skills<br />
-practical_skills<br />
-jobs_basic_abilities<br />
-basic_abilities<br />
-jobs_tools<br />
-affiliates<br />
-jobs_career_paths<br />
-jobs_rec_qualifications<br />
-jobs_req_qualifications<br />
+Unable to give concrete answer. SQL is declarative, the order of the statements shouldn't matter as the query optimizer should find the more efficient way to execute the statement.
+
+Suggested improvements:
+Index the join columns
+Have wildcards at the end of the string and/or index the columns
