@@ -80,10 +80,18 @@ export class DeckService{
         return shuffledDeck;
     }
 
-    cutDeck(deck){
+    cutDeck(deck, randomizeCutPosition=true){
+
+        let cutPosition = 0;
+        if(randomizeCutPosition == true){
+            cutPosition = Math.floor(Math.random() * (DECK_SIZE - 1) + 1);
+        }else{
+            cutPosition = Math.floor(DECK_SIZE / 2) - 1;
+        }
+
         let firstHalfStart = 0;
-        let firstHalfEnd = Math.floor(DECK_SIZE / 2) - 1;
-        let secondHalfStart = DECK_SIZE - firstHalfEnd - 1;
+        let firstHalfEnd = cutPosition;
+        let secondHalfStart = firstHalfEnd + 1;
         let secondHalfEnd = DECK_SIZE - 1;
     
         return [...deck.slice(secondHalfStart,secondHalfEnd + 1),...deck.slice(firstHalfStart,firstHalfEnd + 1)];
