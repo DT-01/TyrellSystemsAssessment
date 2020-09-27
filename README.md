@@ -14,9 +14,13 @@ Notes:<br />
 playingcard-distribution-frontend is a React app that will generate a list of player hands based on the number of players provided in the input field.<br />
 playingcard-distribution-backend is an ExpressJS backend that has a get API which will return an array of player hands.<br />
 
-## Section B
-Unable to give concrete answer. SQL is declarative, the order of the statements shouldn't matter as the query optimizer should find the more efficient way to execute the statement.
+Time taken: ~8 hours<br />
 
-Suggested improvements:
-Index the join columns
-Have wildcards at the end of the string and/or index the columns
+## Section B<br />
+Unable to give concrete answer. SQL is declarative, the order of the statements shouldn't matter as the query optimizer should find the more efficient way to execute the statement.<br />
+
+Suggested improvements:<br />
+Index the join columns<br />
+Have wildcards at the end of the string and/or index the columns<br />
+
+Time taken: ~2 hours<br />
